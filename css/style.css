@@ -1,3 +1,11 @@
+/*
+    Lista de cores para ser usadas
+
+    principal: #FF4701
+    majoritariamente branca: #F2F2F2
+    preta: #000000
+
+*/
 *{
     box-sizing: border-box;
     font-family: sans-serif;
