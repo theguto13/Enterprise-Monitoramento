@@ -19,3 +19,75 @@
 body{
     min-height: 100%;
 }
+a{
+    text-decoration: none;
+}
+/*
+    Header
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    user-select: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img{
+    background-image: url(../img/logo-principal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 70px;
+}
+#h6-tittle{
+    color: #FF4701;
+}
+.logo-img:hover, .logo-tittle:hover{
+    cursor: pointer;
+}
+.links nav{
+    display: inline;
+    position: relative;
+}
+.links nav a{
+    margin: 0 15px;
+    color: #000;
+    transition: .8s all;
+    position: relative;
+}
+.links #request{
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px;
+    color: #FF4701;
+    border: 2px solid #FF4701;
+    border-radius: 5px;
+}
+.links #request:hover{
+    cursor: pointer;
+    background-color: #FF4701;
+    color: #fff;
+    transition: .8s all;
+}
+.links nav #marker{
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FF4701;
+    bottom: -6px;
+    transition: 0.8s;
+    border-radius: 4px;
+}
+.links nav .selected{
+    color: #FF4701;
+}
+iframe{
+    width: 100%;
+    height: auto;
+}

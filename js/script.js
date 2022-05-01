@@ -1,0 +1,16 @@
+window.onload = function(){
+    var marker = document.querySelector('#marker');
+    var home = document.getElementById('#home')
+    var item = document.querySelectorAll('nav a');
+
+    function indicator(e){
+        marker.style.left = e.offsetLeft+"px";
+        marker.style.width = e.offsetWidth+"px";
+    }
+
+    item.forEach(link => {
+        link.addEventListener('click', (e)=>{
+            indicator(e.target);
+        });
+    });
+}
