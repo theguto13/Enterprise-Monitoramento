@@ -17,5 +17,5 @@
     src: url(../fonts/segoeui.ttf);
 }
 body{
-    min-height: 100vh;
+    min-height: 100%;
 }
