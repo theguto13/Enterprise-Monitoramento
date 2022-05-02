@@ -5,6 +5,8 @@
     majoritariamente branca: #F2F2F2
     preta: #000000
 
+    header media = 900px
+    footer media = 1000px
 */
 *{
     box-sizing: border-box;
@@ -47,9 +49,6 @@ header{
 #h6-tittle{
     color: #FF4701;
 }
-.logo-img:hover, .logo-tittle:hover{
-    cursor: pointer;
-}
 .links nav{
     display: inline;
     position: relative;
@@ -87,7 +86,92 @@ header{
 .links nav .selected{
     color: #FF4701;
 }
+.iframe{
+    background-color: #fff;
+    padding: 0 5%;
+}
 iframe{
     width: 100%;
+    min-height: 750px;
     height: auto;
+}
+#footer1{
+    margin-top: -4px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+}
+.rodape-info{
+    width: 30%;
+}
+.logo-rodape{
+    display: flex;
+    justify-content: center;
+    color: #f0f0f0;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-img{
+    background-image: url(../img/logo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 93px;
+}
+.rodape-links{
+    color: #f0f0f0;
+    width: 30%;
+}
+.rodape-links a{
+    color: #FF4701;
+    display: block;
+    margin-left: 15px;
+    padding: 5px;
+    transition: .5s all;
+}
+.rodape-links a::before{
+    content: "";
+    width: 100px;
+    height: 1px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #FF4701;
+}
+.rodape-links a:hover .rodape-links a::after{
+    cursor: pointer;
+    width: 100%;
+}
+.links1, .links2, .links3{
+    width: auto;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.contato{
+    color: #f0f0f0;
+    width: 30%;
+}
+#maior{
+    color: #FF4701;
+    font-size: 20px;
+}
+#first{
+    margin-top: 10px;
+}
+#footer2{
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 15px;
+    background-color: #181818;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer2 h4{
+    margin: 0 30px;
 }
