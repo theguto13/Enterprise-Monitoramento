@@ -4,6 +4,7 @@
     principal: #FF4701
     majoritariamente branca: #F2F2F2
     preta: #000000
+    escuro: #181818
 
     header media = 900px
     footer media = 1000px
@@ -23,6 +24,29 @@ body{
 }
 a{
     text-decoration: none;
+}
+/*
+    Scrollbar
+*/
+body{
+    overflow: overlay;
+    outline: none;
+    display: block;
+}   
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    border-radius: 4px;
+}    
+::-webkit-scrollbar-thumb:vertical{
+    height: 5px;
+    background-color: #FF4701;
+    border-radius: 3px;
+}   
+::-webkit-scrollbar-thumb:horizontal{
+    width: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 3px;
 }
 /*
     Header
@@ -120,56 +144,62 @@ iframe{
     align-items: center;
 }
 .rodape-img{
-    margin-top: 100px;
     background-image: url(../img/logo1.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 250px;
     height: 166px;
+    margin-top:60px;
 }
 .rodape-links{
     color: #f0f0f0;
     width: 30%;
 }
-.rodape-links h3{
-    text-align: center;
+.linkstodos{
+    display: flex;
+    justify-content: space-between;
 }
 .rodape-links a{
     color: #FF4701;
     display: block;
-    margin-left: 15px;
-    padding: 5px;
+    padding: 3px 0;
     transition: .5s all;
 }
-.rodape-links a::before{
-    content: "";
-    width: 100px;
-    height: 1px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    background-color: #FF4701;
-}
-.rodape-links a:hover .rodape-links a::after{
-    cursor: pointer;
-    width: 100%;
+.rodape-links a:hover{
+    color: white;
 }
 .links1, .links2, .links3{
     width: auto;
     display: inline-block;
-    margin: 10px 20px;
+    margin: 10px 0;
 }
 .contato{
     color: #f0f0f0;
     width: 30%;
 }
-#maior{
-    color: #FF4701;
-    font-size: 20px;
-}
-#first{
+.info-contato{
     margin-top: 10px;
 }
+.info-contato h5{
+    margin-top: 5px;
+}
+#lasth51{
+    display: inline-block;
+    color: #181818; 
+    user-select: none;
+}
+#lasth52{
+    display: inline-block;
+    margin-left: 4px;
+}
+#maior{
+    color: #FF4701;
+    font-size: 18px;
+    user-select: auto;
+}
+/*
+    Segundo Rodapé
+*/
 #footer2{
     border-top: 1px solid #000;
     text-align: center;
@@ -179,6 +209,7 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 #footer2 h4{
     margin: 0 30px;
